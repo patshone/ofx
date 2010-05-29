@@ -54,6 +54,7 @@ module OFX
             :amount => amount,
             :amount_in_pennies => (amount * 100).to_i,
             :fit_id => element.search("fitid").inner_text,
+            :name => element.search("name").inner_text,
             :memo => element.search("memo").inner_text,
             :payee => element.search("payee").inner_text,
             :check_number => element.search("checknum").inner_text,
